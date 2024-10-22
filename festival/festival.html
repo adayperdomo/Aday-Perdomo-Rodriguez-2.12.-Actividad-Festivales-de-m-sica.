@@ -8,14 +8,15 @@
 </head>
 <body>
     <header>
-        <h1>Festivales de Musica en Vivo</h1>
+        <h1>Festivales de Música en Vivo</h1>
         <nav>   
             <ul>
                 <li><a href="#intro">Introducción</a></li>
                 <li><a href="#conocidos">Festivales Conocidos</a></li>
                 <li><a href="#recomendacion">Recomendaciones</a></li>
                 <li><a href="#video">Vídeo de Ejemplo</a></li>
-                <li><a href="#contacto">Suscríbete</a></li>
+                <li><a href="#contactar">Suscribción</a></li>
+                <li><a href="#mapa">Ubicación</a></li>
             </ul>
         </nav> 
     </header>
@@ -30,35 +31,37 @@
 
             <article id="conocidos">
                 <h2>Festivales más Conocidos</h2>
-                <table border="1">
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Géneros</th>
-                        <th>Ubicación</th>
-                    </tr>
+                <aside>
+                    <table border="5">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Géneros</th>
+                            <th>Ubicación</th>
+                        </tr>
 
-                    <tr>
-                        <td>Rock in Rio</td>
-                        <td>Rock in Rio es uno de los festivales de música más grandes y reconocidos de América Latina. </td>
-                        <td>Rock / Pop / Heavy metal / Música latina</td>
-                        <td> Río de Janeiro, Brasil</td>
-                    </tr>
+                        <tr>
+                            <td>Rock in Rio</td>
+                            <td>Rock in Rio es uno de los festivales de música más grandes y reconocidos de América Latina. </td>
+                            <td>Rock / Pop / Heavy Metal / Música latina</td>
+                            <td> Río de Janeiro, Brasil</td>
+                        </tr>
 
-                    <tr>
-                        <td>Burning Man</td>
-                        <td>Burning Man no es solo un festival de música, sino una experiencia cultural y artística única.</td>
-                        <td>Música electrónica</td>
-                        <td>Black Rock Desert, Nevada, EE. UU.</td>
-                    </tr>
+                        <tr>
+                            <td>Burning Man</td>
+                            <td>Burning Man no es solo un festival de música, sino una experiencia cultural y artística única.</td>
+                            <td>Música electrónica</td>
+                            <td>Black Rock Desert, Nevada, EE. UU.</td>
+                        </tr>
 
-                    <tr>
-                        <td>Lollapalooza</td>
-                        <td>Lollapalooza es un festival de música icónico que comenzó en Chicago pero se ha expandido a varias ciudades alrededor del mundo.</td>
-                        <td>Rock / Punk / Hip-hop / Música electrónica</td>
-                        <td> Chicago, Illinois, EE. UU.</td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td>Lollapalooza</td>
+                            <td>Lollapalooza es un festival de música icónico que comenzó en Chicago pero se ha expandido a varias ciudades alrededor del mundo.</td>
+                            <td>Rock / Punk / Hip-hop / Música electrónica</td>
+                            <td> Chicago, Illinois, EE. UU.</td>
+                        </tr>
+                    </table>
+                </aside>
             </article>
             <br>
             <article id="recomendacion">
@@ -68,7 +71,7 @@
                     2. Gafas de sol <br>
                     3. Ropa para playa y para lluvia <br>
                     4. Un cargador de repuesto <br>
-                    5. Punto de encuentro <br>
+                    5. Un punto de encuentro <br>
                 </ol>
             </article>
 
@@ -77,13 +80,57 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/aBOWeQ4_GEY?si=qojSG7mAw80BeBrZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </article>
 
-            <article id="contacto">
+            <article id="contactar">
                 <h2>Suscripción</h2>
+                <form>
+                    <fieldset>
+                        <legend>Infromacion Personal:</legend>
+                        <label for="nombre">Nombre:</label> <input type="name" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
+                        <label for="correo">Email:</label> <input type="email" id="correo" name="correo" placeholder="Correo" required><br><br> 
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Géneros de Preferencia:</legend>
+                        <input type="checkbox" id="Hip-Hop" name="cuadrado"> Hip-Hop 
+                        <input type="checkbox" id="Punk" name="cuadrado"> Punk 
+                        <input type="checkbox" id="Electrónica" name="cuadrado"> Electrónica 
+                        <input type="checkbox" id="Heavy Metal" name="cuadrado"> Heavy Metal 
+                        <input type="checkbox" id="Rock" name="cuadrado"> Rock <br><br>
+
+                        <label for="contacto">Festivales Favoritos: </label>
+                        <select name="contacto" id="contacto">
+                            <option disabled selected>Selecciona un Festival</option>
+                            <option value="valor1">Rock in Rio</option>
+                            <option value="valor2">Burning Man</option>
+                            <option value="valor3">Lollapalooza</option>
+                            <option value="valor4">Otro</option>
+                        </select><br><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Más información que desee poner: </legend>
+                        <textarea rows="5" cols="50" id="comentario"></textarea> <br> 
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reiniciar">
+                </form>
+            </article>
+
+            <article id="mapa">
+                <h2>Ubicación de la Empresa</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13542.650020354973!2d-13.516498996169986!3d29.13902351422824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc48a057186e0aaf%3A0xc45fed53018ff0fd!2sIES%20de%20Har%C3%ADa!5e0!3m2!1ses!2ses!4v1729534047915!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </section>
     </main>
-
+    <br>
     <footer>
+        <br>Última actualización: <strong><time datetime="2024-22-10">22 de octubre de 2024</time></strong>
+        <br><br>
+        Dirección de correo electrónico:<address>35009206@gobiernodecanarias.org</address>
+        <br>
+        Autor de la Página: <strong>Aday Perdomo Rodríguez</strong> 
+        <br><br>
         <hr>
     </footer>
 </body>
